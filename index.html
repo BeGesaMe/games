@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <div class="navbar w-full h-[10vh] flex  justify-around items-center border">
+    <div class="navbar w-full h-[10vh] flex  justify-around items-center  ">
         <img src="./images/logo.jpg" class="logo w-[30px] h-[30px] object-contain rounded-full">
 
         <div class="search w-2/3 flex items-center border h-[6vh] p-30px rounded-3xl p-5">
@@ -25,12 +25,21 @@
 
     <section class="flex ">
 
-            <div class="genres w-[15%] h-[100vh] border border-[black]">
+        <!-- PART 1 START -->
+
+            <div class="genres w-[15%] h-[100vh] flex flex-wrap justify-center">
                 <h1 class="font-semibold text-[30px] text-center mt-3">Genres</h1>
+
+              
+
+              
+            
             </div>
+            <!-- PART 1 END -->
 
+            <!-- PART 2 START -->
 
-            <div class="games w-[85%] h-[100vh] border-[red] border ">
+            <div class="games w-[85%] h-[100vh] ">
 
                 <h1 class="font-extrabold text-[40px] m-5">Games</h1>
 
@@ -43,7 +52,7 @@
                 </select>
 
 
-                <div class="games-cards border m-5">
+                <div class="games-cards  m-5 flex flex-wrap justify-around">
                  
                 </div>
 
@@ -60,8 +69,8 @@
 
 
     <template class="template-card">
-        <div class="game-card w-[30%] ">
-            <img src="https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg" class="game-img w-full">
+        <div class="game-card w-[30%] border mt-5 ">
+            <img src="https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg" class="game-img w-full object-contain h-[30vh]">
 
             <div class="game-card-body">
                 <div class="flex items-center justify-between mt-4">
@@ -70,6 +79,13 @@
                 </div>
 
             </div>
+        </div>
+    </template>
+
+    <template class="template-rek">
+        <div class="reks w-[98%] h-[7vh] flex  items-center rounded-lg mb-2 bg-[black] text-[white] hover:underline">
+            <img src="https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg" class="rounded-full w-10 h-10 ml-16 object-cover">
+            <h2 class="font-medium text-[20px] ml-2 cursor-pointer">bla bla </h2>
         </div>
     </template>
 
