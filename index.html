@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games web site</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+
+    <div class="navbar w-full h-[10vh] flex  justify-around items-center border">
+        <img src="./images/logo.jpg" class="logo w-[30px] h-[30px] object-contain rounded-full">
+
+        <div class="search w-2/3 flex items-center border h-[6vh] p-30px rounded-3xl p-5">
+            <img src="./icons/search-svgrepo-com.svg">
+            <input type="text" placeholder="Search games..." class="w-[110%] h-[5vh] pl-3 ">
+        </div>
+
+        <div class="dark-mode w-[7%] flex justify-around items-center">
+            <input type="checkbox">
+            <p class="font-semibold">Dark Mode</p>
+        </div>
+    </div>
+
+
+    <section class="flex ">
+
+            <div class="genres w-[15%] h-[100vh] border border-[black]">
+                <h1 class="font-semibold text-[30px] text-center mt-3">Genres</h1>
+            </div>
+
+
+            <div class="games w-[85%] h-[100vh] border-[red] border ">
+
+                <h1 class="font-extrabold text-[40px] m-5">Games</h1>
+
+                <select name="" id="" class="w-[12%] h-[6vh] rounded-md bg-[#2f2e2e] ml-6 text-[white]">
+                    <option value="" class="bg-[black] text-[white]">Platforms</option>
+                </select>
+
+                <select name="" id="" class="w-[15%] h-[6vh] rounded-md bg-[#2f2e2e]  ml-5 text-[white]">
+                    <option value="" class="bg-[black] text-[white]">Order by: Relevance</option>
+                </select>
+
+
+                <div class="games-cards border m-5">
+                 
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+    </section>
+
+
+
+    <template class="template-card">
+        <div class="game-card w-[30%] ">
+            <img src="https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg" class="game-img w-full">
+
+            <div class="game-card-body">
+                <div class="flex items-center justify-between mt-4">
+                    <h2 class="game-card-title font-medium text-[30px] ml-4">GTA VII</h2>
+                    <p class="game-card-games-count mr-3 w-[20%] text-center bg-black p-2 text-[white] rounded-xl">2323</p>
+                </div>
+
+            </div>
+        </div>
+    </template>
+
+
+
+
+    <script src="javascript/uzgaruvchilar.js"></script>
+    <script src="./javascript/app.js"></script>
+</body>
+</html>
