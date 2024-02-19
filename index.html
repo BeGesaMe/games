@@ -23,60 +23,49 @@
     </div>
 
 
-    <section class="flex ">
+    <section class="flex">
 
         <!-- PART 1 START -->
+        <div class="genres w-[15%] h-[100vh] flex flex-wrap justify-center">
+            <h1 class="font-semibold text-[30px] text-center mt-3">Genres</h1>
+        </div>
+        <!-- PART 1 END -->
 
-            <div class="genres w-[15%] h-[100vh] flex flex-wrap justify-center">
-                <h1 class="font-semibold text-[30px] text-center mt-3">Genres</h1>
+        <!-- PART 2 START -->
+        <div class="games w-[85%] h-[100vh] ">
 
-              
+            <h1 class="font-extrabold text-[40px] m-5">Games</h1>
 
-              
-            
-            </div>
-            <!-- PART 1 END -->
+            <select name="" id="" class="w-[12%] h-[6vh] rounded-md bg-[#2f2e2e] ml-6 text-[white] genres2"></select>
 
-            <!-- PART 2 START -->
-
-            <div class="games w-[85%] h-[100vh] ">
-
-                <h1 class="font-extrabold text-[40px] m-5">Games</h1>
-
-                <select name="" id="" class="w-[12%] h-[6vh] rounded-md bg-[#2f2e2e] ml-6 text-[white]">
-                    <option value="" class="bg-[black] text-[white]">Platforms</option>
-                </select>
-
-                <select name="" id="" class="w-[15%] h-[6vh] rounded-md bg-[#2f2e2e]  ml-5 text-[white]">
-                    <option value="" class="bg-[black] text-[white]">Order by: Relevance</option>
-                </select>
+            <select name="" id="" class="w-[15%] h-[6vh] rounded-md bg-[#2f2e2e]  ml-5 text-[white]">
+                <option value="" class="bg-[black] text-[white]">Order by: Relevance</option>
+            </select>
 
 
-                <div class="games-cards  m-5 flex flex-wrap justify-around">
-                 
-                </div>
+            <div class="games-cards  m-5 flex flex-wrap justify-around"></div>
 
-
-
-
-            </div>
-
-
-
+        </div>
+        <!-- PART 2 START -->
 
     </section>
 
 
 
     <template class="template-card">
-        <div class="game-card w-[30%] border mt-5 ">
-            <img src="https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg" class="game-img w-full object-contain h-[30vh]">
+        <div class="game-card w-[30%] shadow rounded mt-5  pb-9 ">
+            <img src="https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg" class="game-img w-full object-cover rounded-t-lg h-[30vh]">
 
             <div class="game-card-body">
-                <div class="flex items-center justify-between mt-4">
-                    <h2 class="game-card-title font-medium text-[30px] ml-4">GTA VII</h2>
-                    <p class="game-card-games-count mr-3 w-[20%] text-center bg-black p-2 text-[white] rounded-xl">2323</p>
+
+                <div class="flex w-full justify-between items-center h-[7vh]">
+                    <div class="ml-3">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <p class="game-card-games-count mr-3 w-[20%] text-center bg-black p-1 text-[white] rounded-md"></p>
                 </div>
+
+                <h2 class="game-card-title font-medium text-[20px] ml-4">GTA VII</h2>
 
             </div>
         </div>
@@ -84,11 +73,16 @@
 
     <template class="template-rek">
         <div class="reks w-[98%] h-[7vh] flex  items-center rounded-lg mb-2 bg-[black] text-[white] hover:underline">
-            <img src="https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg" class="rounded-full w-10 h-10 ml-16 object-cover">
-            <h2 class="font-medium text-[20px] ml-2 cursor-pointer">bla bla </h2>
+            <img src="https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg" class="rounded-full w-10 h-10 ml-5 object-cover" id="rasm">
+            <h2 class="font-medium text-[14px] ml-2 cursor-pointer">bla bla </h2>
         </div>
     </template>
 
+    <template class="template-genres2">
+        <option value="" class="bg-[black] text-[white]">Platforms</option>
+    </template>
+
+    
 
 
 
